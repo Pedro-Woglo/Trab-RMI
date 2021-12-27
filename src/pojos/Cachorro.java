@@ -1,4 +1,5 @@
-package model;
+
+package pojos;
 
 public class Cachorro extends Animal{
 

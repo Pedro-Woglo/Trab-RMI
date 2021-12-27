@@ -1,8 +1,10 @@
-package model;
+package pojos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Estoque {
+public class Estoque implements Serializable{
+	
 	private static ArrayList<Animal> animais;
 	
 	static {
@@ -13,6 +15,10 @@ public class Estoque {
 		animais.add((Gato)gato);
 		Coelho coelho = new Coelho("Pernalonga", 3, "Angorá");
 		animais.add((Coelho)coelho);
+	}
+	
+	public void addAnimal(Animal a) {
+		animais.add(a);
 	}
 
 	public ArrayList<Animal> getAnimais() {
